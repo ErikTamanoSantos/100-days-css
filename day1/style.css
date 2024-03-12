@@ -1,0 +1,105 @@
+/* CHALLENGE URL: https://100dayscss.com/days/1/ */
+
+/*
+delete the following line if no text is used
+edit the line if you wanna use other fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+
+/* use only the available space inside the 400x400 frame */
+* {
+  box-sizing: border-box;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: linear-gradient(45deg, rgb(62, 62, 217) 20%, rgb(130, 203, 230) 80%);
+  color: #333;
+	font-family: 'Roboto Slab', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.center h2, .center h3 {
+  color: white;
+  margin: 0;
+}
+
+.center h2 {
+  font-size: 5rem;
+}
+
+.center h3 {
+  font-size: 1.5rem;
+}
+
+#number-container {
+  position: relative;
+  width: 240px;
+  height: 100px;
+}
+
+#number-container div {
+  position: absolute;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
+}
+
+#one-diagonal, #one-vertical {
+  border-radius: 5px;
+}
+
+#one-diagonal {
+  background-color: #F2F2F2;
+  width: 25px;
+  height: 50px;
+  left: 8px;
+  transform: rotate(45deg);
+}
+
+#one-vertical {
+  background-color: white;
+  width: 25px;
+  height: 100px;
+  left: 25px;
+  z-index: 3;
+}
+
+#zero-first, #zero-second {
+  background-color: transparent;
+  height: 100px;
+  width: 100px;
+  border: solid 25px white;
+  border-radius: 50%;
+}
+
+#zero-first {
+  left: 40px;
+  z-index: 2;
+}
+
+#zero-second {
+  left: 125px;
+  z-index: 1;
+}
